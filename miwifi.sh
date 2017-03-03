@@ -25,7 +25,7 @@ if [ "${num}" == "1" ]
 then
 cd /tmp
 rm -rf *.sh
-wget https://raw.githubusercontent.com/blademainer/miwifi-ss/master/r2d/r2d_ss.sh
+curl -o r2d_ss.sh https://raw.githubusercontent.com/blademainer/miwifi-ss/master/r2d/r2d_ss.sh
 chmod -R 777 r2d_ss.sh
 ./r2d_ss.sh
 fi
@@ -33,7 +33,7 @@ if [ "${num}" == "2" ]
 then
 cd /tmp
 rm -rf *.sh
-wget https://raw.githubusercontent.com/blademainer/miwifi-ss/master/r2d/r2d_uninstall.sh
+curl -o r2d_uninstall.sh https://raw.githubusercontent.com/blademainer/miwifi-ss/master/r2d/r2d_uninstall.sh
 chmod -R 777 r2d_uninstall.sh
 ./r2d_uninstall.sh
 fi
@@ -43,7 +43,7 @@ if [ "${num}" == "3" ]
 then
 cd /tmp
 rm -rf *.sh
-wget https://raw.githubusercontent.com/blademainer/miwifi-ss/master/mini/mini_ss.sh
+curl -o mini_ss.sh https://raw.githubusercontent.com/blademainer/miwifi-ss/master/mini/mini_ss.sh
 chmod -R 777 mini_ss.sh
 ./mini_ss.sh
 fi
@@ -52,7 +52,7 @@ if [ "${num}" == "4" ]
 then
 cd /tmp
 rm -rf *.sh
-wget https://raw.githubusercontent.com/blademainer/miwifi-ss/master/mini/mini_uninstall.sh
+curl -o mini_uninstall.sh https://raw.githubusercontent.com/blademainer/miwifi-ss/master/mini/mini_uninstall.sh
 chmod -R 777 mini_uninstall.sh
 sh mini_uninstall.sh
 fi
@@ -61,7 +61,7 @@ if [ "${num}" == "5" ]
 then
 cd /tmp
 rm -rf *.sh
-wget https://raw.githubusercontent.com/blademainer/miwifi-ss/master/r3/r3_ss.sh
+curl -o r3_ss.sh https://raw.githubusercontent.com/blademainer/miwifi-ss/master/r3/r3_ss.sh
 chmod -R 777 r3_ss.sh
 ./r3_ss.sh
 fi
@@ -70,7 +70,7 @@ if [ "${num}" == "6" ]
 then
 cd /tmp
 rm -rf *.sh
-wget https://raw.githubusercontent.com/blademainer/miwifi-ss/master/r3/r3_uninstall.sh
+curl -o r3_uninstall.sh https://raw.githubusercontent.com/blademainer/miwifi-ss/master/r3/r3_uninstall.sh
 chmod -R 777 r3_uninstall.sh
 sh r3_uninstall.sh
 fi
