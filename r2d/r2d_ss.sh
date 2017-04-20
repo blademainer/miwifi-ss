@@ -12,7 +12,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 cd /userdisk/data/
 rm -f shadowsocks_miwifi.tar.gz
-wget -c https://raw.githubusercontent.com/blademainer/miwifi-ss/master/r2d/shadowsocks_miwifi.tar.gz
+curl https://raw.githubusercontent.com/blademainer/miwifi-ss/master/r2d/shadowsocks_miwifi.tar.gz -o shadowsocks_miwifi.tar.gz
 tar zxf shadowsocks_miwifi.tar.gz
 
 # Config shadowsocks init script

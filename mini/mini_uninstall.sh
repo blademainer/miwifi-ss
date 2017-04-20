@@ -13,4 +13,3 @@
 	/etc/init.d/firewall restart
 	/etc/init.d/dnsmasq restart
 	echo "卸载Shadowsocks完成"
-	cd /tmp && rm -rf *.sh && wget ftp://ftp.okss.tk/miwifi/miwifi.sh && sh ./miwifi.sh && rm -rf *.sh
