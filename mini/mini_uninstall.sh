@@ -6,7 +6,7 @@
         echo -e "删除相关文件--------------------------------------\c"
         rm -rf /etc/init.d/shadowsocks
         rm -rf /etc/dnsmasq.d/gfwlist.conf
-	rm -rf /data/usr/sbin
+	rm -rf /userdisk/sysapihttpd/shadowsocks
 	rm -rf /etc/shadowsocks.json
         sed -i '/ipset -N gfwlist iphash -!/d' /etc/firewall.user
         sed -i '/iptables -t nat -A PREROUTING -p tcp -m set --match-set gfwlist dst -j REDIRECT --to-port 1081/d' /etc/firewall.user
