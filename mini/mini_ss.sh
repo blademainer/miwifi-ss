@@ -12,7 +12,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 cd /tmp
 rm -f shadowsocks_mini.tar.gz
-curl https://raw.githubusercontent.com/jk2K/miwifi-ss/master/mini/shadowsocks_mini.tar.gz -o shadowsocks_mini.tar.gz
+curl https://raw.githubusercontent.com/blademainer/miwifi-ss/master/mini/shadowsocks_mini.tar.gz -o shadowsocks_mini.tar.gz
 tar zxf shadowsocks_mini.tar.gz
 
 # install shadowsocks ss-redir to /userdisk/sysapihttpd/shadowsocks/bin
